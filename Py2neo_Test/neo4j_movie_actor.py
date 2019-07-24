@@ -14,7 +14,7 @@ graph = Graph(host="localhost://7474", auth=("neo4j", "jc147369"))
 # 创建电影节
 for i in range(movies_df.shape[0]):
     rank = str(movies_df.iloc[i, :]['rank'])
-    name = movies_df.iloc[i, :]['name']
+    name = str(movies_df.iloc[i, :]['name'])
     box_office = movies_df.iloc[i, :]['box_office']
     avg_price = str(movies_df.iloc[i, :]['avg_price'])
     avg_people = str(movies_df.iloc[i, :]['avg_people'])
